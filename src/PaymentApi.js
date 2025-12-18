@@ -1,8 +1,8 @@
 // api/paymentApi.js
-const VITE_API_BASE = "https://evergreen-home-products.onrender.com/api/v1";
+const VITE_API_BASE = "https://evergreen-home-products.onrender.com";
 export const getCheckoutSession = async (id) => {
   const response = await fetch(
-    `http://localhost:3000/api/v1/orders/checkout-session/${id}`,
+    `${VITE_API_BASE}/api/v1/orders/checkout-session/${id}`,
     {
       method: "POST",
       headers: {
@@ -20,7 +20,7 @@ export const getCheckoutSession = async (id) => {
 };
 
 export const getRazorpayKey = async () => {
-  const res = await fetch(`${VITE_API_BASE}/orders/razorpay-key`, {
+  const res = await fetch(`${VITE_API_BASE}/api/v1/orders/razorpay-key`, {
     credentials: "include",
   });
 
@@ -31,7 +31,7 @@ export const getRazorpayKey = async () => {
 export const createOrder = async (amountInPaisa) => {
   // Get the token (Assume you store it in localStorage)
 
-  const response = await fetch(`${VITE_API_BASE}/orders/checkout-cart`, {
+  const response = await fetch(`${VITE_API_BASE}api/v1/orders/checkout-cart`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export const createOrder = async (amountInPaisa) => {
   return await response.json();
 };
 export const saveOrder = async (orderDetails) => {
-  const res = await fetch(`${VITE_API_BASE}/bookings/create-booking`, {
+  const res = await fetch(`${VITE_API_BASE}api/v1/bookings/create-booking`, {
     // You will create this route later
     method: "POST",
     headers: {

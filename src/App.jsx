@@ -7,7 +7,7 @@ import OrderDetails, { orderdetaisLoader } from "./assets/pages/OrderDetails";
 import Cart from "./assets/pages/Cart";
 import ItemList from "./assets/pages/ItemList";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import Login from "./assets/pages/login";
+import Login from "./assets/pages/Login";
 import Signup from "./assets/pages/Signup";
 import Settings from "./assets/pages/Settings";
 import Profile from "./assets/pages/Profile";
