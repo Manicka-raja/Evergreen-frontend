@@ -31,7 +31,7 @@ export const getRazorpayKey = async () => {
 export const createOrder = async (amountInPaisa) => {
   // Get the token (Assume you store it in localStorage)
 
-  const response = await fetch(`${VITE_API_BASE}api/v1/orders/checkout-cart`, {
+  const response = await fetch(`${VITE_API_BASE}/api/v1/orders/checkout-cart`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

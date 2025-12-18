@@ -72,7 +72,7 @@ const FilterIcon = () => (
   </svg>
 );
 
-const CustomSelect = ({ value, onChange, options, colorTheme }) => {
+const CustomSelect = ({ value, onChange, options, colorTheme, icon: Icon }) => {
   const [isOpen, setIsOpen] = useState(false);
   const selectedLabel =
     options.find((opt) => String(opt.value) === String(value))?.label ||
@@ -113,7 +113,8 @@ const CustomSelect = ({ value, onChange, options, colorTheme }) => {
         } ${isOpen ? "ring-2 ring-offset-1" : ""}`}
       >
         <div className="flex items-center gap-2">
-          <Icon />
+          {Icon && <Icon />}
+
           <span>{selectedLabel}</span>
         </div>
         <ChevronDownIcon
