@@ -50,7 +50,7 @@ export const createOrder = async (amountInPaisa) => {
   return await response.json();
 };
 export const saveOrder = async (orderDetails) => {
-  const res = await fetch(`${VITE_API_BASE}api/v1/bookings/create-booking`, {
+  const res = await fetch(`${VITE_API_BASE}/api/v1/bookings/create-booking`, {
     // You will create this route later
     method: "POST",
     headers: {
