@@ -140,7 +140,7 @@ const Cart = () => {
                   className="bg-white p-6 rounded-2xl border shadow-sm flex gap-6"
                 >
                   <img
-                    src={`http://localhost:3000/img/products/${item.tour.image}`}
+                    src={`https://evergreen-home-products.onrender.com/img/products/${item.tour.image}`}
                     alt={item.tour?.name}
                     className="w-32 h-32 object-cover rounded-xl"
                   />

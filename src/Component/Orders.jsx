@@ -94,7 +94,7 @@ function Orders() {
                         <div className="h-16 w-16 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center overflow-hidden border">
                           {/* Placeholder for Tour Image */}
                           <img
-                            src={`http://localhost:3000/img/products/${item.tour.image}`}
+                            src={`https://evergreen-home-products.onrender.com/img/products/${item.image}`}
                             alt={item.tour.name}
                             className="object-cover h-full w-full"
                             onError={(e) => {

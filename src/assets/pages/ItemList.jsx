@@ -72,7 +72,7 @@ const FilterIcon = () => (
   </svg>
 );
 
-const CustomSelect = ({ value, onChange, options, icon: Icon, colorTheme }) => {
+const CustomSelect = ({ value, onChange, options, colorTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const selectedLabel =
     options.find((opt) => String(opt.value) === String(value))?.label ||
@@ -246,7 +246,7 @@ function ItemList() {
             >
               <div className="relative h-60 w-full overflow-hidden bg-slate-100">
                 <img
-                  src={`http://localhost:3000/img/products/${item.image}`}
+                  src={`https://evergreen-home-products.onrender.com/img/products/${item.image}`}
                   alt={item.name}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) =>

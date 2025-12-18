@@ -10,7 +10,7 @@ function UserReviews({ review }) {
         >
           <img
             className="w-full h-full object-cover rounded-full transition-transform duration-500 hover:scale-105"
-            src={`http://localhost:3000/img/user/${review.user.photo}`}
+            src={`https://evergreen-home-products.onrender.com/img/user/${review.user.photo}`}
             alt="user"
           />
         </div>

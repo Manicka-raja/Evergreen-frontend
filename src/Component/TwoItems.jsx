@@ -24,7 +24,7 @@ function TwoItems({ menu }) {
           <div className="w-full h-40 flex flex-col items-center justify-start gap-1">
             <div className="w-28 h-28 -mt-2 mb-1">
               <img
-                src={`http://localhost:3000/img/products/${item.image}`}
+                src={`https://evergreen-home-products.onrender.com/img/products/${item.image}`}
                 alt={item.name}
                 className="object-cover rounded-full w-full h-full shadow-lg transition-transform duration-500 hover:rotate-12 hover:scale-105"
               />
