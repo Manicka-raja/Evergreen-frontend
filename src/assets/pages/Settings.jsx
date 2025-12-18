@@ -41,7 +41,7 @@ function Settings() {
         <div className="relative">
           <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg border-4 border-white ring-1 ring-gray-100">
             <img
-              src={`http://localhost:3000/img/user/${data?.photo}`}
+              src={`https://evergreen-home-products.onrender.com/img/user/${data?.photo}`}
               alt="User Profile"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               onError={(e) =>

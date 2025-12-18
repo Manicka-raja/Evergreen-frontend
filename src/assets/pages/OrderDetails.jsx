@@ -24,7 +24,7 @@ function OrderDetails() {
     <div className="min-h-screen bg-gray-50 p-4 sm:p-6 flex flex-col items-center">
       <div className="w-full max-w-4xl bg-white shadow-2xl rounded-xl overflow-hidden mb-6">
         <img
-          src={`http://localhost:3000/img/products/${data.image}`}
+          src={`https://evergreen-home-products.onrender.com/img/products/${data.image}`}
           className="w-full h-96 object-cover transition-transform duration-500 hover:scale-105"
           alt={data.name}
         />

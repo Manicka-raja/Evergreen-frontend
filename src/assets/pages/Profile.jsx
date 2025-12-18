@@ -82,7 +82,7 @@ function Profile() {
           <div className="relative -mt-24 mb-8 flex justify-center">
             <div className="relative group">
               <img
-                src={`http://localhost:3000/img/user/${user.photo}`}
+                src={`https://evergreen-home-products.onrender.com/img/user/${user.photo}`}
                 className="w-48 h-48 rounded-full object-cover border-[6px] border-white shadow-lg bg-gray-200"
                 alt="User"
               />
